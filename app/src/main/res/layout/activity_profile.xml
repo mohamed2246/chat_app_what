@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profileActivity"
+    android:background="@drawable/background_profile"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:background="@drawable/gradient_bg" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/visit_profile_image"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_110sdp"
+        android:src="@drawable/profile_image"
+        android:scaleType="centerCrop"
+
+        />
+
+    <TextView
+        android:id="@+id/visit_profile_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:layout_below="@id/visit_profile_image"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        />
+
+    <TextView
+        android:id="@+id/visit_profile_stuts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello I'm Using Re-tech"
+        android:layout_below="@id/visit_profile_name"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_25sdp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        />
+
+    <Button
+        android:id="@+id/Send_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/visit_profile_stuts"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_white"
+        android:text="Send Message"
+        android:textColor="@color/colorPrimary"
+
+        />
+
+    <Button
+        android:id="@+id/decline_message_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_white"
+        android:text="Cancle Request Message"
+        android:textColor="@color/colorPrimary"
+        android:visibility="invisible"
+
+        />
+
+</RelativeLayout>

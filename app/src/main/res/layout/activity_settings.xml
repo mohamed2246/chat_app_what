@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/man2"
+    tools:context=".settings">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_bar_layout2"
+        android:background="@drawable/gradient_bg"
+        >
+        <include
+            layout="@layout/app_toolbar"
+            android:id="@+id/find_friends_tool_bar"
+            >
+        </include>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:background="@drawable/gradient_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/set_profile_image"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/profile_image"
+            app:civ_border_width="5dp"
+            android:scaleType="centerCrop"
+            app:civ_border_color="@color/colorSecondary"
+            />
+
+
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/set_profile_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="40dp">
+
+            <EditText
+                android:id="@+id/set_progile_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:drawableStart="@drawable/edit_profile"
+                android:drawablePadding="10dp"
+                android:fontFamily="sans-serif-light"
+                android:hint="User Name"
+                android:inputType="textEmailAddress"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/set_progile_stuts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/set_progile_name"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#FFFFFF"
+                android:drawableStart="@drawable/edit_status"
+                android:fontFamily="sans-serif-light"
+                android:hint="Hey ... I'm Avaliable Now"
+                android:inputType="text"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF  "
+                android:textSize="17sp"
+                android:drawablePadding="10dp"
+                />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/Update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_white"
+            android:text="Update"
+            android:textColor="@color/colorPrimary"
+
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
